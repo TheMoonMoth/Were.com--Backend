@@ -41,16 +41,16 @@ var userSightings = []
 function fileWolf(obj){
   switch (obj.color){
     case "Black":
-      sightings[2].locations.unshift(obj.locations)
+      sightings[2].locations.unshift(obj.location)
       break
     case "Brown":
-      sightings[1].locations.unshift(obj.locations)
+      sightings[1].locations.unshift(obj.location)
       break
     case "Silver":
-      sightings[0].locations.unshift(obj.locations)
+      sightings[0].locations.unshift(obj.location)
       break
     case "Gray with Yellow Stripe":
-      sightings[3].locations.unshift(obj.locations)
+      sightings[3].locations.unshift(obj.location)
       break
     default:
       return "This werewolf has never been seen before. WARNING! Stay away."
