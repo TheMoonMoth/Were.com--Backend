@@ -1,0 +1,27 @@
+{
+  "name": "were.com-backend",
+  "version": "0.0.1",
+  "description": "Werewolf locator ",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheMoonMoth/Were.com--Backend.git"
+  },
+  "author": "Were In The World Industries",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TheMoonMoth/Were.com--Backend/issues"
+  },
+  "homepage": "https://github.com/TheMoonMoth/Were.com--Backend#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.14.0"
+  }
+}
