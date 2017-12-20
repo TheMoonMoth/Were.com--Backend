@@ -4,7 +4,9 @@
   "description": "Werewolf locator ",
   "main": "app.js",
   "scripts": {
-    "test": "mocha app.js"
+    "test": "mocha app.js",
+    "start": "node app.js",
+    "dev": "nodemon app.js"
   },
   "repository": {
     "type": "git",
