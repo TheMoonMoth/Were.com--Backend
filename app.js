@@ -38,19 +38,19 @@ const sightings = [
 
 var userSightings = []
 
-function fileWolf(req){
-  switch (req.body){
+function fileWolf(obj){
+  switch (obj.color){
     case "Black":
-      req.body.location
+      sightings[2].locations.unshift(obj.locations)
       break
     case "Brown":
-      return
+      sightings[1].locations.unshift(obj.locations)
       break
     case "Silver":
-      return
+      sightings[0].locations.unshift(obj.locations)
       break
     case "Gray with Yellow Stripe":
-      return
+      sightings[3].locations.unshift(obj.locations)
       break
     default:
       return "This werewolf has never been seen before. WARNING! Stay away."
@@ -79,6 +79,7 @@ app.post('/userSighting', function(req, resp){
   console.log(req.body)
   let incoming = req.body
   userSightings.push(incoming)
+  fileWolf(incoming)
   // resp.json({message: "Thanks for the update!"})
 })
 
