@@ -20,4 +20,9 @@ app.get('/sightings', function(req, resp){
   resp.json(sightings)
 })
 
+app.post('/userSighting', function(req, resp){
+  console.log(req.body)
+  let incoming = req.body
+})
+
 app.listen(process.env.PORT || 3000)

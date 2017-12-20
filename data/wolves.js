@@ -25,7 +25,7 @@ const wolves = [
       photo: ""
     },{
       threatLevel: 5,
-      color: "Black with Yellow Stripe",
+      color: "Gray with Yellow Stripe",
       name: "Ookami",
       id: 4,
       location: "",
