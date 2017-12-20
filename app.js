@@ -25,6 +25,8 @@ app.get('/sightings', function(req, resp){
 app.post('/userSighting', function(req, resp){
   console.log(req.body)
   let incoming = req.body
+  userSightings.push(incoming)
+  res.json({message: "Thanks for the update!"})
 })
 
 app.get('/userSighting', function(req, resp){
