@@ -3,9 +3,60 @@ const cors = require('cors')
 const bodyParser = require('body-parser')
 
 const wolfData = require('./data/wolves.js')
-const sightings = require('./data/locations.js')
+
+const sightings = [
+  {
+    wolfId: 1,
+    locations: [ //park hill
+      "Aurora",
+      "Park Hill",
+      "Cherry Creek"
+    ]
+  },{
+    wolfId: 2,
+    locations: [ //citypark
+      "Capitol Hill",
+      "City Park",
+      "RiNo"
+    ]
+  },{
+    wolfId: 3,
+    locations: [ //chatfield
+      "Chatfield",
+      "Littleton",
+      "Baker"
+    ]
+  },{
+    wolfId: 4,
+    locations: [ //cap hill
+      "Wash Park",
+      "Five Points",
+      "Pearl Street"
+    ]
+  }
+]
 
 var userSightings = []
+
+function fileWolf(req){
+  switch (req.body){
+    case "Black":
+      req.body.location
+      break
+    case "Brown":
+      return
+      break
+    case "Silver":
+      return
+      break
+    case "Gray with Yellow Stripe":
+      return
+      break
+    default:
+      return "This werewolf has never been seen before. WARNING! Stay away."
+      break
+  }
+}
 
 const app = express()
 app.use(cors())
