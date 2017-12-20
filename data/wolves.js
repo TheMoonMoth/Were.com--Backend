@@ -7,7 +7,6 @@ const wolves = [
       color: "Silver",
       name: "Cerberus",
       id: 1,
-      neighborhood: "Capitol Hill",
       location: "",
       photo: ""
     },{
@@ -15,7 +14,6 @@ const wolves = [
       color: "Brown",
       name: "Anton",
       id: 2,
-      neighborhood: "Park Hill",
       location: "",
       photo: ""
     },{
@@ -23,7 +21,6 @@ const wolves = [
       color: "Black",
       name: "Fenris",
       id: 3,
-      neighborhood: "Washington Park",
       location: "",
       photo: ""
     },{
@@ -31,7 +28,6 @@ const wolves = [
       color: "Black with Yellow Stripe",
       name: "Ookami",
       id: 4,
-      neighborhood: "5 Points",
       location: "",
       photo: ""
     }

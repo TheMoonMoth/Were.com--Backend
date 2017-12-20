@@ -2,7 +2,7 @@ const express = require('express')
 const cors = require('cors')
 
 const wolfData = require('./data/wolves.js')
-const neighborhoodData = require('./data/locations.js')
+const sightings = require('./data/locations.js')
 
 const app = express()
 app.use(cors())
@@ -16,8 +16,8 @@ app.get('/wolves', function(req, resp){
   resp.json(wolfData)
 })
 
-app.get('/locations', function(req, resp){
-  resp.json(neighborhoodData)
+app.get('/sightings', function(req, resp){
+  resp.json(sightings)
 })
 
 app.listen(process.env.PORT || 3000)
