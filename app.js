@@ -1,5 +1,6 @@
 const express = require('express')
 const cors = require('cors')
+const bodyParser = require('body-parser')
 
 const wolfData = require('./data/wolves.js')
 const sightings = require('./data/locations.js')
@@ -8,6 +9,7 @@ var userSightings = []
 
 const app = express()
 app.use(cors())
+app.use(bodyParser())
 
 app.get('/', function(req, resp){
   resp.json("Welcome to Were.com")
@@ -26,7 +28,7 @@ app.post('/userSighting', function(req, resp){
   console.log(req.body)
   let incoming = req.body
   userSightings.push(incoming)
-  res.json({message: "Thanks for the update!"})
+  // resp.json({message: "Thanks for the update!"})
 })
 
 app.get('/userSighting', function(req, resp){
