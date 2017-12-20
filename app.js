@@ -4,6 +4,8 @@ const cors = require('cors')
 const wolfData = require('./data/wolves.js')
 const sightings = require('./data/locations.js')
 
+var userSightings = []
+
 const app = express()
 app.use(cors())
 
